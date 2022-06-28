@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function  selects()
+	{
+		var ele = document.getElementsByName('chk');
+		for(i=0;i<ele.length;i++)
+		{ ;
+			if(ele[i].type=='checkbox'){
+				ele[i].checked=true;}
+
+		}
+	}
+function  deSelects()
+	{
+		var ele = document.getElementsByName("chk");
+		for(i=0;i<ele.length;i++)
+		{
+			if(ele[i].type=='checkbox')
+			{
+				ele[i].checked=false;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<h3> Select or deselect all checknoxes as per your mood</h3>
+<input type="checkbox" name="chk" value="smile">Smile<br>
+<input type="checkbox" name="chk" value="laugh">Laugh<br>
+<input type="checkbox" name="chk" value="cry">Cry<br>
+<input type="checkbox" name="chk" value="angry">Angry<br><br>
+<input type="button" onclick='selects()' value="SelectAll"/>
+<input type="button" onclick='deSelects()' value="DeSelectAll"/><br>
+</body>
+</html>
